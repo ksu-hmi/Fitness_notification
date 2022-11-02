@@ -4,7 +4,7 @@
 - [x] Each Team Member is assigned a role. Either Owner, Admin, or Maintainer Role.
 - [x] Each Team Member edits and committ changes
 - [x] Explore other existing Python Code 
-#### (https://github.com/baraolt/food-notifier)
+#### A Python script that sends email alerts if a desired food is on the menu: https://github.com/baraolt/food-notifier
 
 ## Sprint 2 
 
