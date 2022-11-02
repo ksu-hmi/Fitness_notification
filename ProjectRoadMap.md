@@ -1,11 +1,11 @@
 ## Sprint 1
-- [ ] Select an Approved Project 
-- [ ] Establish a Github Account 
-- [ ] Each Team Member is assigned a role. Either Owner, Admin, or Maintainer Role.
-- [ ] Each Team Member edits and committ changes
-- [ ] Explore other existing Python Code 
+- [x] Select an Approved Project 
+- [x] Establish a Github Account 
+- [x] Each Team Member is assigned a role. Either Owner, Admin, or Maintainer Role.
+- [x] Each Team Member edits and committ changes
+- [x] Explore other existing Python Code 
 
 ## Sprint 2
--
+-[ ] 
 
 ## Sprint 3 
