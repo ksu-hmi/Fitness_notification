@@ -6,6 +6,6 @@
 - [x] Explore other existing Python Code 
 
 ## Sprint 2
--[ ] 
+
 
 ## Sprint 3 
