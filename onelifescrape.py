@@ -12,6 +12,7 @@ soup = BeautifulSoup(page.content,'html.parser')
 
 lists = soup.find_all('section', id="schedule")
 
+#make a loop to find the class_name of each section
 for list in lists:
     class_name = list.find('img', alt="Les Mills BODYPUMP™")
     info = [class_name]
