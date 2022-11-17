@@ -17,3 +17,6 @@
 - [ ] Ensure the the ProjectRoadMap is up to date. 
 
 ## Sprint 3 
+- [ ] Refine and edit existing code. 
+- [ ] Create a Powerpoint Slide introducing your topic. 
+- [ ] All Team Members will upload a copy of the Powerpoint to D2L.
