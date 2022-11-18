@@ -6,3 +6,8 @@ import requests
 #grab basic content from a web page
 url = "https://www.onelifefitness.com/gyms/atlanta-holly-springs?hsLang=en"
 page = requests.get(url)
+
+#using the html parser to process the webpage text content
+soup = BeautifulSoup(page.text,'html.parser')
+
+print(soup)
