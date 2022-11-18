@@ -3,7 +3,6 @@ import bs4, requests, smtplib
 
 # ------------------- E-mail list ------------------------
 toAddress = ['example1@email.com','example2@email.com']
-# --------------------------------------------------------
 
 #Download page
 getPage = requests.get("https://www.onelifefitness.com/gyms/atlanta-holly-springs?hsLang=en")
