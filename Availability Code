@@ -8,8 +8,8 @@ toAddress = ['example1@email.com','example2@email.com']
 getPage = requests.get("https://www.onelifefitness.com/gyms/atlanta-holly-springs?hsLang=en")
 getPage.raise_for_status() #if error it will stop the program
 
-#Parse text for foods
-menu = bs4.BeautifulSoup(getPage.text, 'html.parser')
+#Parse text for classes
+list = bs4.BeautifulSoup(getPage.text, 'html.parser')
 activity = menu.select('.classname')
 
 the_one = 'pilates' # This is the name of the class you are looking for
