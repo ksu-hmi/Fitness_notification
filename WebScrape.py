@@ -2,3 +2,7 @@
 
 from bs4 import BeautifulSoup
 import requests
+
+#grab basic content from a web page
+url = "https://www.onelifefitness.com/gyms/atlanta-holly-springs?hsLang=en"
+page = requests.get(url)
