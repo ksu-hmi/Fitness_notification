@@ -10,5 +10,7 @@ page = requests.get(url)
 #using the html parser to process the webpage text content
 soup = BeautifulSoup(page.text,'html.parser')
 
-print(soup)
+for img in soup.find_all('img',alt=True):
+    print(img)
+
 
