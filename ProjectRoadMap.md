@@ -10,12 +10,12 @@
 #### A Python script that is a scraper that alerts when new ads matching given filters appear: https://github.com/mratkovic/njuskalo-notifier
 
 ## Sprint 2 
-- [ ] Each Team Member will commit a minimum of 6 substantial changes to the code for the project. 
-- [ ] Each commit will be accompanied by a comment in the code explaining what was done and why. 
-- [ ] Each comment must explain what the update was and why it was updated. 
-- [ ] All updates will be posted in Github so the changes can be seen by all. 
-- [ ] Ensure the the ProjectRoadMap is up to date. 
-- [ ] Create code for notification to be sent to phone.
+- [x] Each Team Member will commit a minimum of 6 substantial changes to the code for the project. 
+- [x] Each commit will be accompanied by a comment in the code explaining what was done and why. 
+- [x] Each comment must explain what the update was and why it was updated. 
+- [x] All updates will be posted in Github so the changes can be seen by all. 
+- [x] Ensure the the ProjectRoadMap is up to date. 
+- [x] Create code for notification to be sent to phone.
 
 ## Sprint 3 
 - [ ] Refine and edit existing code. 
