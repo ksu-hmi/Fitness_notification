@@ -15,7 +15,7 @@
 - [x] Each comment must explain what the update was and why it was updated. 
 - [x] All updates will be posted in Github so the changes can be seen by all. 
 - [x] Ensure the the ProjectRoadMap is up to date. 
-- [ ] Create code for notification to be sent to phone.
+- [x] Create code for notification to be sent to phone.
 
 ## Sprint 3 
 - [ ] Refine and edit existing code. 
