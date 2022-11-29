@@ -49,4 +49,50 @@ print('Friday: ' + fri.text)
 print('Saturday: ' + sat.text)
 print('Sunday: ' + sun.text)
 
+
 #CODE TO FIND ALL MONDAY CLASSES 
+#FINDS THE IMG FIRST AND THEN WITHIN THE IMG FIND THE 'alt' ATTRIBUTE THAT CONTAINS THE CLASS NAME
+monclass1 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[1]/table/tbody/tr[4]/td/ul/li[1]/img').get_attribute('alt')
+monclass2 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[1]/table/tbody/tr[4]/td/ul/li[2]/img').get_attribute('alt')
+monclass3 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[1]/table/tbody/tr[4]/td/ul/li[3]/img').get_attribute('alt')
+monclass4 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[1]/table/tbody/tr[4]/td/ul/li[4]/img').get_attribute('alt')
+monclass5 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[1]/table/tbody/tr[4]/td/ul/li[5]/img').get_attribute('alt')
+monclass6 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[1]/table/tbody/tr[4]/td/ul/li[6]/img').get_attribute('alt')
+monclass7 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[1]/table/tbody/tr[4]/td/ul/li[7]/img').get_attribute('alt')
+monclass8 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[1]/table/tbody/tr[4]/td/ul/li[8]/img').get_attribute('alt')
+monclass9 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[1]/table/tbody/tr[4]/td/ul/li[9]/img').get_attribute('alt')
+monclass10 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[1]/table/tbody/tr[4]/td/ul/li[10]/img').get_attribute('alt')
+monclass11 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[1]/table/tbody/tr[4]/td/ul/li[11]/img').get_attribute('alt')
+monclass12 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[1]/table/tbody/tr[4]/td/ul/li[12]/img').get_attribute('alt')
+monclass13 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[1]/table/tbody/tr[4]/td/ul/li[13]/img').get_attribute('alt')
+monclass14 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[1]/table/tbody/tr[4]/td/ul/li[14]/img').get_attribute('alt')
+
+print("-----MONDAY CLASSES-----")
+print(monclass1)
+print(monclass2)
+print(monclass3)
+print(monclass4)
+print(monclass5)
+print(monclass6)
+print(monclass7)
+print(monclass8)
+print(monclass9)
+print(monclass10)
+print(monclass11)
+print(monclass12)
+print(monclass13)
+print(monclass14)
