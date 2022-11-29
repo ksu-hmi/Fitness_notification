@@ -2,11 +2,12 @@
 from selenium import webdriver
 #allows for searching of elements
 from selenium.webdriver.common.by import By
-#the explicit wait code -- waits for a certan condition to occure before proceeding furthing  
+#the explicit wait code -- waits for a certan condition to occur before proceeding further  
 # in the code both of the imports (WebDriverWait & ExpectedCondition) needed.
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
+#website used for scrape
 website = "https://www.onelifefitness.com/gyms/atlanta-holly-springs?hsLang=en"
 #the path to chromedriver
 PATH = "C:\Program Files (x86)\chromedriver.exe"
@@ -15,11 +16,12 @@ driver = webdriver.Chrome(PATH)
 #getting the url 
 driver.get(website)
 
-#wait
+#making the page load before code executes
 driver.implicitly_wait(10)  # seconds
-driver.get(website)
 options = webdriver.ChromeOptions()
 options.add_experimental_option("excludeSwitches", ["enable-logging"])
+
+//*[@id="divContent"]/table[2]/tbody/tr[1]/td[1]/table/tbody/tr[2]
 
 #CODE TO PULL THE MOVIES EVERY DAY OF THE WEEK
 mon = driver.find_element(By.XPATH,
@@ -43,3 +45,5 @@ print('Thursday: ' + thu.text)
 print('Friday: ' + fri.text)
 print('Saturday: ' + sat.text)
 print('Sunday: ' + sun.text)
+
+#CODE TO FIND ALL MONDAY CLASSES 
