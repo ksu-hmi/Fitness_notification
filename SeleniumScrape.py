@@ -18,12 +18,13 @@ driver.get(website)
 
 #making the page load before code executes
 driver.implicitly_wait(10)  # seconds
+#enable logging
 options = webdriver.ChromeOptions()
 options.add_experimental_option("excludeSwitches", ["enable-logging"])
 
-//*[@id="divContent"]/table[2]/tbody/tr[1]/td[1]/table/tbody/tr[2]
 
 #CODE TO PULL THE MOVIES EVERY DAY OF THE WEEK
+#XPATH FROM MOVIE TITLES EVERYDAY
 mon = driver.find_element(By.XPATH,
     '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[1]/table/tbody/tr[2]/td/table/tbody/tr[2]/td/table/tbody/tr[2]/td')
 tue = driver.find_element(By.XPATH,
@@ -38,6 +39,8 @@ sat = driver.find_element(By.XPATH,
     '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[6]/table/tbody/tr[2]/td/table/tbody/tr[2]/td/table/tbody/tr[2]/td')
 sun = driver.find_element(By.XPATH,
     '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[7]/table/tbody/tr[2]/td/table/tbody/tr[2]/td/table/tbody/tr[2]/td')
+
+#PRINT THE MOVIES 
 print('Monday: ' + mon.text)
 print('Tuesday: ' + tue.text)
 print('Wednesday: ' + wed.text)
