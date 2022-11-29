@@ -145,3 +145,48 @@ print(montime12.text)
 print(montime12.text)
 print(montime13.text)
 print(montime14.text)
+
+##CODE TO FIND ALL MONDAY CLASSES INSTRUCTOR
+moninstructor1 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[1]/table/tbody/tr[4]/td/ul/li[1]/div[2]/table/tbody/tr/td')
+moninstructor2 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[1]/table/tbody/tr[4]/td/ul/li[2]/div[2]/table/tbody/tr/td')
+moninstructor3 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[1]/table/tbody/tr[4]/td/ul/li[3]/div[2]/table/tbody/tr/td')
+moninstructor4 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[1]/table/tbody/tr[4]/td/ul/li[4]/div[2]/table/tbody/tr/td')
+moninstructor5 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[1]/table/tbody/tr[4]/td/ul/li[5]/div[2]/table/tbody/tr/td')
+moninstructor6 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[1]/table/tbody/tr[4]/td/ul/li[6]/div[2]/table/tbody/tr/td')
+moninstructor7 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[1]/table/tbody/tr[4]/td/ul/li[7]/div[2]/table/tbody/tr/td')
+moninstructor8 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[1]/table/tbody/tr[4]/td/ul/li[8]/div[2]/table/tbody/tr/td')
+moninstructor9 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[1]/table/tbody/tr[4]/td/ul/li[9]/div[2]/table/tbody/tr/td')
+moninstructor10 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[1]/table/tbody/tr[4]/td/ul/li[10]/div[2]/table/tbody/tr/td')
+moninstructor11 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[1]/table/tbody/tr[4]/td/ul/li[11]/div[2]/table/tbody/tr/td')
+moninstructor12 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[1]/table/tbody/tr[4]/td/ul/li[12]/div[2]/table/tbody/tr/td')
+moninstructor13 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[1]/table/tbody/tr[4]/td/ul/li[13]/div[2]/table/tbody/tr/td')
+moninstructor14 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[1]/table/tbody/tr[4]/td/ul/li[14]/div[2]/table/tbody/tr/td')
+
+print(moninstructor1.text)
+print(moninstructor2.text)
+print(moninstructor3.text)
+print(moninstructor4.text)
+print(moninstructor5.text)
+print(moninstructor6.text)
+print(moninstructor7.text)
+print(moninstructor8.text)
+print(moninstructor9.text)
+print(moninstructor10.text)
+print(moninstructor11.text)
+print(moninstructor12.text)
+print(moninstructor13.text)
+print(moninstructor14.text)
