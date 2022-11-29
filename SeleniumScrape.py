@@ -593,7 +593,7 @@ friinstructor10 = driver.find_element(By.XPATH,
     '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[5]/table/tbody/tr[4]/td/ul/li[10]/div[2]/table/tbody/tr/td')
 friinstructor11 = driver.find_element(By.XPATH,
     '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[5]/table/tbody/tr[4]/td/ul/li[11]/div[2]/table/tbody/tr/td')
-)
+
 
 print("\nFRIDAY CLASSES\n")
 print(fritime1.text, friclass1, "with", friinstructor1.text)
