@@ -1,29 +1,45 @@
 #first need to install selenium and also chronium to use the below code
 from selenium import webdriver
-#give us access to different keys on the key board (like the enter key, escape key, etc...)
-from selenium.webdriver.common.keys import Keys
 #allows for searching of elements
 from selenium.webdriver.common.by import By
-from selenium.webdriver.chrome.options import Options 
-#perform select strategies and choose the choices from the dropdown list
-from selenium.webdriver.support.ui import Select
-import time
+#the explicit wait code -- waits for a certan condition to occure before proceeding furthing  
+# in the code both of the imports (WebDriverWait & ExpectedCondition) needed.
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
 
+website = "https://www.onelifefitness.com/gyms/atlanta-holly-springs?hsLang=en"
+#the path to chromedriver
 PATH = "C:\Program Files (x86)\chromedriver.exe"
 driver = webdriver.Chrome(PATH)
 
 #getting the url 
-driver.get("https://www.onelifefitness.com/gyms/atlanta-holly-springs?hsLang=en")
-print(driver.title)
+driver.get(website)
 
-#After instepcting the region select area -- it is telling to find the element ID
-classopt = driver.find_element(By.ID, ('selectClasses'))
-#Send the key "GA" since that's the region that we want
+#wait
+driver.implicitly_wait(10)  # seconds
+driver.get(website)
+options = webdriver.ChromeOptions()
+options.add_experimental_option("excludeSwitches", ["enable-logging"])
 
-#Tells it to press the "enter" key on the keyboard to search
-#region.send_keys(Keys.RETURN)
-
-#so we can see what is happening and delays it for 5 seconds
-#time.sleep(10)
-
-print(classopt)
+#CODE TO PULL THE MOVIES EVERY DAY OF THE WEEK
+mon = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[1]/table/tbody/tr[2]/td/table/tbody/tr[2]/td/table/tbody/tr[2]/td')
+tue = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[2]/table/tbody/tr[2]/td/table/tbody/tr[2]/td/table/tbody/tr[2]/td')
+wed = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[3]/table/tbody/tr[2]/td/table/tbody/tr[2]/td/table/tbody/tr[2]/td')
+thu = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[4]/table/tbody/tr[2]/td/table/tbody/tr[2]/td/table/tbody/tr[2]/td')
+fri = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[5]/table/tbody/tr[2]/td/table/tbody/tr[2]/td/table/tbody/tr[2]/td')
+sat = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[6]/table/tbody/tr[2]/td/table/tbody/tr[2]/td/table/tbody/tr[2]/td')
+sun = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[7]/table/tbody/tr[2]/td/table/tbody/tr[2]/td/table/tbody/tr[2]/td')
+print('Monday: ' + mon.text)
+print('Tuesday: ' + tue.text)
+print('Wednesday: ' + wed.text)
+print('Thursday: ' + thu.text)
+print('Friday: ' + fri.text)
+print('Saturday: ' + sat.text)
+print('Sunday: ' + sun.text)
