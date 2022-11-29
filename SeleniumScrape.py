@@ -81,23 +81,6 @@ monclass13 = driver.find_element(By.XPATH,
 monclass14 = driver.find_element(By.XPATH,
     '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[1]/table/tbody/tr[4]/td/ul/li[14]/img').get_attribute('alt')
 
-print("-----MONDAY CLASSES-----")
-print(monclass1)
-print(monclass2)
-print(monclass3)
-print(monclass4)
-print(monclass5)
-print(monclass6)
-print(monclass7)
-print(monclass8)
-print(monclass9)
-print(monclass10)
-print(monclass11)
-print(monclass12)
-print(monclass13)
-print(monclass14)
-
-
 
 #CODE TO FIND ALL MONDAY CLASSES Times
 montime1 = driver.find_element(By.XPATH,
@@ -131,20 +114,6 @@ montime13 = driver.find_element(By.XPATH,
 montime14 = driver.find_element(By.XPATH,
     '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[1]/table/tbody/tr[4]/td/ul/li[14]/div[1]')
 
-print(montime1.text)
-print(montime2.text)
-print(montime3.text)
-print(montime4.text)
-print(montime5.text)
-print(montime6.text)
-print(montime7.text)
-print(montime8.text)
-print(montime9.text)
-print(montime10.text)
-print(montime12.text)
-print(montime12.text)
-print(montime13.text)
-print(montime14.text)
 
 ##CODE TO FIND ALL MONDAY CLASSES INSTRUCTOR
 moninstructor1 = driver.find_element(By.XPATH,
@@ -176,17 +145,19 @@ moninstructor13 = driver.find_element(By.XPATH,
 moninstructor14 = driver.find_element(By.XPATH,
     '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[1]/table/tbody/tr[4]/td/ul/li[14]/div[2]/table/tbody/tr/td')
 
-print(moninstructor1.text)
-print(moninstructor2.text)
-print(moninstructor3.text)
-print(moninstructor4.text)
-print(moninstructor5.text)
-print(moninstructor6.text)
-print(moninstructor7.text)
-print(moninstructor8.text)
-print(moninstructor9.text)
-print(moninstructor10.text)
-print(moninstructor11.text)
-print(moninstructor12.text)
-print(moninstructor13.text)
-print(moninstructor14.text)
+print("MONDAY SCHEDULE\n")
+print(montime1.text, monclass1, "with", moninstructor1.text)
+print(montime2.text, monclass2, "with", moninstructor2.text)
+print(montime3.text, monclass3, "with", moninstructor3.text)
+print(montime4.text, monclass4, "with", moninstructor4.text)
+print(montime5.text, monclass5, "with", moninstructor5.text)
+print(montime6.text, monclass6, "with", moninstructor6.text)
+print(montime7.text, monclass7, "with", moninstructor7.text)
+print(montime8.text, monclass8, "with", moninstructor8.text)
+print(montime9.text, monclass9, "with", moninstructor9.text)
+print(montime10.text, monclass10, "with", moninstructor10.text)
+print(montime11.text, monclass11, "with", moninstructor11.text)
+print(montime12.text, monclass12, "with", moninstructor12.text)
+print(montime13.text, monclass13, "with", moninstructor13.text)
+print(montime14.text, monclass14, "with", moninstructor14.text)
+
