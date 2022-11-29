@@ -288,3 +288,239 @@ print(tuetime16.text, tueclass16, "with", tueinstructor16.text)
 print(tuetime17.text, tueclass17, "with", tueinstructor17.text)
 
 #CODE TO FIND ALL WEDNESDAY CLASSES, TIMES AND INSTRUCTOR
+wedclass1 = driver.find_element(By.XPATH,
+	'//*[@id="divContent"]/table[2]/tbody/tr[1]/td[3]/table/tbody/tr[4]/td/ul/li[1]/img').get_attribute('alt')
+wedclass2 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[3]/table/tbody/tr[4]/td/ul/li[2]/img').get_attribute('alt')
+wedclass3 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[3]/table/tbody/tr[4]/td/ul/li[3]/img').get_attribute('alt')
+wedclass4 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[3]/table/tbody/tr[4]/td/ul/li[4]/img').get_attribute('alt')
+wedclass5 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[3]/table/tbody/tr[4]/td/ul/li[5]/img').get_attribute('alt')
+wedclass6 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[3]/table/tbody/tr[4]/td/ul/li[6]/img').get_attribute('alt')
+wedclass7 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[3]/table/tbody/tr[4]/td/ul/li[7]/img').get_attribute('alt')
+wedclass8 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[3]/table/tbody/tr[4]/td/ul/li[8]/img').get_attribute('alt')
+wedclass9 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[3]/table/tbody/tr[4]/td/ul/li[9]/img').get_attribute('alt')
+wedclass10 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[3]/table/tbody/tr[4]/td/ul/li[10]/img').get_attribute('alt')
+wedclass11 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[3]/table/tbody/tr[4]/td/ul/li[11]/img').get_attribute('alt')
+wedclass12 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[3]/table/tbody/tr[4]/td/ul/li[12]/img').get_attribute('alt')
+wedclass13 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[3]/table/tbody/tr[4]/td/ul/li[13]/img').get_attribute('alt')
+wedclass14 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[3]/table/tbody/tr[4]/td/ul/li[14]/img').get_attribute('alt')
+wedclass15 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[3]/table/tbody/tr[4]/td/ul/li[15]/img').get_attribute('alt')
+
+
+wedtime1 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[3]/table/tbody/tr[4]/td/ul/li[1]/div[1]')
+wedtime2 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[3]/table/tbody/tr[4]/td/ul/li[2]/div[1]')
+wedtime3 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[3]/table/tbody/tr[4]/td/ul/li[3]/div[1]')
+wedtime4 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[3]/table/tbody/tr[4]/td/ul/li[4]/div[1]')
+wedtime5 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[3]/table/tbody/tr[4]/td/ul/li[5]/div[1]')
+wedtime6 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[3]/table/tbody/tr[4]/td/ul/li[6]/div[1]')
+wedtime7 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[3]/table/tbody/tr[4]/td/ul/li[7]/div[1]')
+wedtime8 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[3]/table/tbody/tr[4]/td/ul/li[8]/div[1]')
+wedtime9 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[3]/table/tbody/tr[4]/td/ul/li[9]/div[1]')
+wedtime10 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[3]/table/tbody/tr[4]/td/ul/li[10]/div[1]')
+wedtime11 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[3]/table/tbody/tr[4]/td/ul/li[11]/div[1]')
+wedtime12 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[3]/table/tbody/tr[4]/td/ul/li[12]/div[1]')
+wedtime13 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[3]/table/tbody/tr[4]/td/ul/li[13]/div[1]')
+wedtime14 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[3]/table/tbody/tr[4]/td/ul/li[14]/div[1]')
+wedtime15 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[3]/table/tbody/tr[4]/td/ul/li[15]/div[1]')
+
+
+wedinstructor1 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[3]/table/tbody/tr[4]/td/ul/li[1]/div[2]/table/tbody/tr/td')
+wedinstructor2 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[3]/table/tbody/tr[4]/td/ul/li[2]/div[2]/table/tbody/tr/td')
+wedinstructor3 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[3]/table/tbody/tr[4]/td/ul/li[3]/div[2]/table/tbody/tr/td')
+wedinstructor4 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[3]/table/tbody/tr[4]/td/ul/li[4]/div[2]/table/tbody/tr/td')
+wedinstructor5 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[3]/table/tbody/tr[4]/td/ul/li[5]/div[2]/table/tbody/tr/td')
+wedinstructor6 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[3]/table/tbody/tr[4]/td/ul/li[6]/div[2]/table/tbody/tr/td')
+wedinstructor7 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[3]/table/tbody/tr[4]/td/ul/li[7]/div[2]/table/tbody/tr/td')
+wedinstructor8 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[3]/table/tbody/tr[4]/td/ul/li[8]/div[2]/table/tbody/tr/td')
+wedinstructor9 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[3]/table/tbody/tr[4]/td/ul/li[9]/div[2]/table/tbody/tr/td')
+wedinstructor10 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[3]/table/tbody/tr[4]/td/ul/li[10]/div[2]/table/tbody/tr/td')
+wedinstructor11 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[3]/table/tbody/tr[4]/td/ul/li[11]/div[2]/table/tbody/tr/td')
+wedinstructor12 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[3]/table/tbody/tr[4]/td/ul/li[12]/div[2]/table/tbody/tr/td')
+wedinstructor13 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[3]/table/tbody/tr[4]/td/ul/li[13]/div[2]/table/tbody/tr/td')
+wedinstructor14 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[3]/table/tbody/tr[4]/td/ul/li[14]/div[2]/table/tbody/tr/td')
+wedinstructor15 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[3]/table/tbody/tr[4]/td/ul/li[15]/div[2]/table/tbody/tr/td')
+ 
+
+print("\nWEDNESDAY CLASSES\n")
+print(wedtime1.text, wedclass1, "with", wedinstructor1.text)
+print(wedtime2.text, wedclass2, "with", wedinstructor2.text)
+print(wedtime3.text, wedclass3, "with", wedinstructor3.text)
+print(wedtime4.text, wedclass4, "with", wedinstructor4.text)
+print(wedtime5.text, wedclass5, "with", wedinstructor5.text)
+print(wedtime6.text, wedclass6, "with", wedinstructor6.text)
+print(wedtime7.text, wedclass7, "with", wedinstructor7.text)
+print(wedtime8.text, wedclass8, "with", wedinstructor8.text)
+print(wedtime9.text, wedclass9, "with", wedinstructor9.text)
+print(wedtime10.text, wedclass10, "with", wedinstructor10.text)
+print(wedtime11.text, wedclass11, "with", wedinstructor11.text)
+print(wedtime12.text, wedclass12, "with", wedinstructor12.text)
+print(wedtime13.text, wedclass13, "with", wedinstructor13.text)
+print(wedtime14.text, wedclass14, "with", wedinstructor14.text)
+print(wedtime15.text, wedclass15, "with", wedinstructor15.text)
+
+
+#CODE TO FIND ALL THURSDAY CLASSES, TIMES AND INSTRUCTOR
+
+thuclass1 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[4]/table/tbody/tr[4]/td/ul/li[1]/div[1]').get_attribute('alt')
+thuclass2 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[4]/table/tbody/tr[4]/td/ul/li[2]/img').get_attribute('alt')
+thuclass3 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[4]/table/tbody/tr[4]/td/ul/li[3]/img').get_attribute('alt')
+thuclass4 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[4]/table/tbody/tr[4]/td/ul/li[4]/img').get_attribute('alt')
+thuclass5 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[4]/table/tbody/tr[4]/td/ul/li[5]/img').get_attribute('alt')
+thuclass6 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[4]/table/tbody/tr[4]/td/ul/li[6]/img').get_attribute('alt')
+thuclass7 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[4]/table/tbody/tr[4]/td/ul/li[7]/img').get_attribute('alt')
+thuclass8 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[4]/table/tbody/tr[4]/td/ul/li[8]/img').get_attribute('alt')
+thuclass9 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[4]/table/tbody/tr[4]/td/ul/li[9]/img').get_attribute('alt')
+thuclass10 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[4]/table/tbody/tr[4]/td/ul/li[10]/img').get_attribute('alt')
+thuclass11 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[4]/table/tbody/tr[4]/td/ul/li[11]/img').get_attribute('alt')
+thuclass12 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[4]/table/tbody/tr[4]/td/ul/li[12]/img').get_attribute('alt')
+thuclass13 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[4]/table/tbody/tr[4]/td/ul/li[13]/img').get_attribute('alt')
+thuclass14 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[4]/table/tbody/tr[4]/td/ul/li[14]/img').get_attribute('alt')
+thuclass15 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[4]/table/tbody/tr[4]/td/ul/li[15]/img').get_attribute('alt')
+thuclass16 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[4]/table/tbody/tr[4]/td/ul/li[16]/img').get_attribute('alt')
+
+
+thutime1 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[4]/table/tbody/tr[4]/td/ul/li[1]/div[1]')
+thutime2 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[4]/table/tbody/tr[4]/td/ul/li[2]/div[1]')
+thutime3 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[4]/table/tbody/tr[4]/td/ul/li[3]/div[1]')
+thutime4 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[4]/table/tbody/tr[4]/td/ul/li[4]/div[1]')
+thutime5 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[4]/table/tbody/tr[4]/td/ul/li[5]/div[1]')
+thutime6 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[4]/table/tbody/tr[4]/td/ul/li[6]/div[1]')
+thutime7 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[4]/table/tbody/tr[4]/td/ul/li[7]/div[1]')
+thutime8 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[4]/table/tbody/tr[4]/td/ul/li[8]/div[1]')
+thutime9 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[4]/table/tbody/tr[4]/td/ul/li[9]/div[1]')
+thutime10 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[4]/table/tbody/tr[4]/td/ul/li[10]/div[1]')
+thutime11 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[4]/table/tbody/tr[4]/td/ul/li[11]/div[1]')
+thutime12 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[4]/table/tbody/tr[4]/td/ul/li[12]/div[1]')
+thutime13 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[4]/table/tbody/tr[4]/td/ul/li[13]/div[1]')
+thutime14 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[4]/table/tbody/tr[4]/td/ul/li[14]/div[1]')
+thutime15 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[4]/table/tbody/tr[4]/td/ul/li[15]/div[1]')
+thutime16 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[4]/table/tbody/tr[4]/td/ul/li[16]/div[1]')
+
+
+thuinstructor1 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[4]/table/tbody/tr[4]/td/ul/li[1]/div[2]/table/tbody/tr/td')
+thuinstructor2 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[4]/table/tbody/tr[4]/td/ul/li[2]/div[2]/table/tbody/tr/td')
+thuinstructor3 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[4]/table/tbody/tr[4]/td/ul/li[3]/div[2]/table/tbody/tr/td')
+thuinstructor4 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[4]/table/tbody/tr[4]/td/ul/li[4]/div[2]/table/tbody/tr/td')
+thuinstructor5 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[4]/table/tbody/tr[4]/td/ul/li[5]/div[2]/table/tbody/tr/td')
+thuinstructor6 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[4]/table/tbody/tr[4]/td/ul/li[6]/div[2]/table/tbody/tr/td')
+thuinstructor7 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[4]/table/tbody/tr[4]/td/ul/li[7]/div[2]/table/tbody/tr/td')
+thuinstructor8 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[4]/table/tbody/tr[4]/td/ul/li[8]/div[2]/table/tbody/tr/td')
+thuinstructor9 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[4]/table/tbody/tr[4]/td/ul/li[9]/div[2]/table/tbody/tr/td')
+thuinstructor10 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[4]/table/tbody/tr[4]/td/ul/li[10]/div[2]/table/tbody/tr/td')
+thuinstructor11 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[4]/table/tbody/tr[4]/td/ul/li[11]/div[2]/table/tbody/tr/td')
+thuinstructor12 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[4]/table/tbody/tr[4]/td/ul/li[12]/div[2]/table/tbody/tr/td')
+thuinstructor13 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[4]/table/tbody/tr[4]/td/ul/li[13]/div[2]/table/tbody/tr/td')
+thuinstructor14 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[4]/table/tbody/tr[4]/td/ul/li[14]/div[2]/table/tbody/tr/td')
+thuinstructor15 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[4]/table/tbody/tr[4]/td/ul/li[15]/div[2]/table/tbody/tr/td')
+thuinstructor16 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[4]/table/tbody/tr[4]/td/ul/li[16]/div[2]/table/tbody/tr/td')
+
+
+print("\nTHURSDAY CLASSES\n")
+print(thutime1.text, thuclass1, "with", thuinstructor1.text)
+print(thutime2.text, thuclass2, "with", thuinstructor2.text)
+print(thutime3.text, thuclass3, "with", thuinstructor3.text)
+print(thutime4.text, thuclass4, "with", thuinstructor4.text)
+print(thutime5.text, thuclass5, "with", thuinstructor5.text)
+print(thutime6.text, thuclass6, "with", thuinstructor6.text)
+print(thutime7.text, thuclass7, "with", thuinstructor7.text)
+print(thutime8.text, thuclass8, "with", thuinstructor8.text)
+print(thutime9.text, thuclass9, "with", thuinstructor9.text)
+print(thutime10.text, thuclass10, "with", thuinstructor10.text)
+print(thutime11.text, thuclass11, "with", thuinstructor11.text)
+print(thutime12.text, thuclass12, "with", thuinstructor12.text)
+print(thutime13.text, thuclass13, "with", thuinstructor13.text)
+print(thutime14.text, thuclass14, "with", thuinstructor14.text)
+print(thutime15.text, thuclass15, "with", thuinstructor15.text)
+print(thutime16.text, thuclass16, "with", thuinstructor16.text)
+
