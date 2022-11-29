@@ -96,3 +96,52 @@ print(monclass11)
 print(monclass12)
 print(monclass13)
 print(monclass14)
+
+
+
+#CODE TO FIND ALL MONDAY CLASSES Times
+montime1 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[1]/table/tbody/tr[4]/td/ul/li[1]/div[1]')
+montime1 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[2]/table/tbody/tr[4]/td/ul/li[1]/div[1]')
+montime2 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[1]/table/tbody/tr[4]/td/ul/li[2]/div[1]')
+montime3 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[1]/table/tbody/tr[4]/td/ul/li[3]/div[1]')
+montime4 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[1]/table/tbody/tr[4]/td/ul/li[4]/div[1]')
+montime5 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[1]/table/tbody/tr[4]/td/ul/li[5]/div[1]')
+montime6 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[1]/table/tbody/tr[4]/td/ul/li[6]/div[1]')
+montime7 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[1]/table/tbody/tr[4]/td/ul/li[7]/div[1]')
+montime8 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[1]/table/tbody/tr[4]/td/ul/li[8]/div[1]')
+montime9 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[1]/table/tbody/tr[4]/td/ul/li[9]/div[1]')
+montime10 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[1]/table/tbody/tr[4]/td/ul/li[10]/div[1]')
+montime11 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[1]/table/tbody/tr[4]/td/ul/li[11]/div[1]')
+montime12 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[1]/table/tbody/tr[4]/td/ul/li[12]/div[1]')
+montime13 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[1]/table/tbody/tr[4]/td/ul/li[13]/div[1]')
+montime14 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[1]/table/tbody/tr[4]/td/ul/li[14]/div[1]')
+
+print(montime1.text)
+print(montime2.text)
+print(montime3.text)
+print(montime4.text)
+print(montime5.text)
+print(montime6.text)
+print(montime7.text)
+print(montime8.text)
+print(montime9.text)
+print(montime10.text)
+print(montime12.text)
+print(montime12.text)
+print(montime13.text)
+print(montime14.text)
