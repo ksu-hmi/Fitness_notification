@@ -403,7 +403,6 @@ print(wedtime15.text, wedclass15, "with", wedinstructor15.text)
 
 
 #CODE TO FIND ALL THURSDAY CLASSES, TIMES AND INSTRUCTOR
-
 thuclass1 = driver.find_element(By.XPATH,
     '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[4]/table/tbody/tr[4]/td/ul/li[1]/div[1]').get_attribute('alt')
 thuclass2 = driver.find_element(By.XPATH,
@@ -524,3 +523,192 @@ print(thutime14.text, thuclass14, "with", thuinstructor14.text)
 print(thutime15.text, thuclass15, "with", thuinstructor15.text)
 print(thutime16.text, thuclass16, "with", thuinstructor16.text)
 
+#CODE TO FIND ALL FRIDAY CLASSES, TIMES AND INSTRUCTOR
+friclass1 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[5]/table/tbody/tr[4]/td/ul/li[1]/img').get_attribute('alt')
+friclass2 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[5]/table/tbody/tr[4]/td/ul/li[2]/img').get_attribute('alt')
+friclass3 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[5]/table/tbody/tr[4]/td/ul/li[3]/img').get_attribute('alt')
+friclass4 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[5]/table/tbody/tr[4]/td/ul/li[4]/img').get_attribute('alt')
+friclass5 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[5]/table/tbody/tr[4]/td/ul/li[5]/img').get_attribute('alt')
+friclass6 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[5]/table/tbody/tr[4]/td/ul/li[6]/img').get_attribute('alt')
+friclass7 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[5]/table/tbody/tr[4]/td/ul/li[7]/img').get_attribute('alt')
+friclass8 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[5]/table/tbody/tr[4]/td/ul/li[8]/img').get_attribute('alt')
+friclass9 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[5]/table/tbody/tr[4]/td/ul/li[9]/img').get_attribute('alt')
+friclass10 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[5]/table/tbody/tr[4]/td/ul/li[10]/img').get_attribute('alt')
+friclass11 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[5]/table/tbody/tr[4]/td/ul/li[11]/img').get_attribute('alt')
+
+
+fritime1 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[5]/table/tbody/tr[4]/td/ul/li[1]/div[1]')
+fritime2 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[5]/table/tbody/tr[4]/td/ul/li[2]/div[1]')
+fritime3 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[5]/table/tbody/tr[4]/td/ul/li[3]/div[1]')
+fritime4 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[5]/table/tbody/tr[4]/td/ul/li[4]/div[1]')
+fritime5 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[5]/table/tbody/tr[4]/td/ul/li[5]/div[1]')
+fritime6 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[5]/table/tbody/tr[4]/td/ul/li[6]/div[1]')
+fritime7 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[5]/table/tbody/tr[4]/td/ul/li[7]/div[1]')
+fritime8 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[5]/table/tbody/tr[4]/td/ul/li[8]/div[1]')
+fritime9 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[5]/table/tbody/tr[4]/td/ul/li[9]/div[1]')
+fritime10 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[5]/table/tbody/tr[4]/td/ul/li[10]/div[1]')
+fritime11 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[5]/table/tbody/tr[4]/td/ul/li[11]/div[1]')
+
+friinstructor1 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[5]/table/tbody/tr[4]/td/ul/li[1]/div[2]/table/tbody/tr/td')
+friinstructor2 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[5]/table/tbody/tr[4]/td/ul/li[2]/div[2]/table/tbody/tr/td')
+friinstructor3 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[5]/table/tbody/tr[4]/td/ul/li[3]/div[2]/table/tbody/tr/td')
+friinstructor4 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[5]/table/tbody/tr[4]/td/ul/li[4]/div[2]/table/tbody/tr/td')
+friinstructor5 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[5]/table/tbody/tr[4]/td/ul/li[5]/div[2]/table/tbody/tr/td')
+friinstructor6 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[5]/table/tbody/tr[4]/td/ul/li[6]/div[2]/table/tbody/tr/td')
+friinstructor7 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[5]/table/tbody/tr[4]/td/ul/li[7]/div[2]/table/tbody/tr/td')
+friinstructor8 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[5]/table/tbody/tr[4]/td/ul/li[8]/div[2]/table/tbody/tr/td')
+friinstructor9 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[5]/table/tbody/tr[4]/td/ul/li[9]/div[2]/table/tbody/tr/td')
+friinstructor10 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[5]/table/tbody/tr[4]/td/ul/li[10]/div[2]/table/tbody/tr/td')
+friinstructor11 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[5]/table/tbody/tr[4]/td/ul/li[11]/div[2]/table/tbody/tr/td')
+)
+
+print("\nFRIDAY CLASSES\n")
+print(fritime1.text, friclass1, "with", friinstructor1.text)
+print(fritime2.text, friclass2, "with", friinstructor2.text)
+print(fritime3.text, friclass3, "with", friinstructor3.text)
+print(fritime4.text, friclass4, "with", friinstructor4.text)
+print(fritime5.text, friclass5, "with", friinstructor5.text)
+print(fritime6.text, friclass6, "with", friinstructor6.text)
+print(fritime7.text, friclass7, "with", friinstructor7.text)
+print(fritime8.text, friclass8, "with", friinstructor8.text)
+print(fritime9.text, friclass9, "with", friinstructor9.text)
+print(fritime10.text, friclass10, "with", friinstructor10.text)
+print(fritime11.text, friclass11, "with", friinstructor11.text)
+
+satclass1 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[6]/table/tbody/tr[4]/td/ul/li[1]/div[1]').get_attribute('alt')
+satclass2 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[6]/table/tbody/tr[4]/td/ul/li[2]/img').get_attribute('alt')
+satclass3 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[6]/table/tbody/tr[4]/td/ul/li[3]/img').get_attribute('alt')
+satclass4 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[6]/table/tbody/tr[4]/td/ul/li[4]/img').get_attribute('alt')
+satclass5 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[6]/table/tbody/tr[4]/td/ul/li[5]/img').get_attribute('alt')
+satclass6 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[6]/table/tbody/tr[4]/td/ul/li[6]/img').get_attribute('alt')
+satclass7 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[6]/table/tbody/tr[4]/td/ul/li[7]/img').get_attribute('alt')
+
+
+sattime1 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[6]/table/tbody/tr[4]/td/ul/li[1]/div[1]')
+sattime2 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[6]/table/tbody/tr[4]/td/ul/li[2]/div[1]')
+sattime3 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[6]/table/tbody/tr[4]/td/ul/li[3]/div[1]')
+sattime4 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[6]/table/tbody/tr[4]/td/ul/li[4]/div[1]')
+sattime5 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[6]/table/tbody/tr[4]/td/ul/li[5]/div[1]')
+sattime6 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[6]/table/tbody/tr[4]/td/ul/li[6]/div[1]')
+sattime7 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[6]/table/tbody/tr[4]/td/ul/li[7]/div[1]')
+
+
+satinstructor1 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[6]/table/tbody/tr[4]/td/ul/li[1]/div[2]/table/tbody/tr/td')
+satinstructor2 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[6]/table/tbody/tr[4]/td/ul/li[2]/div[2]/table/tbody/tr/td')
+satinstructor3 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[6]/table/tbody/tr[4]/td/ul/li[3]/div[2]/table/tbody/tr/td')
+satinstructor4 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[6]/table/tbody/tr[4]/td/ul/li[4]/div[2]/table/tbody/tr/td')
+satinstructor5 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[6]/table/tbody/tr[4]/td/ul/li[5]/div[2]/table/tbody/tr/td')
+satinstructor6 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[6]/table/tbody/tr[4]/td/ul/li[6]/div[2]/table/tbody/tr/td')
+satinstructor7 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[6]/table/tbody/tr[4]/td/ul/li[7]/div[2]/table/tbody/tr/td')
+
+
+print("\nSATURDAY CLASSES\n")
+print(sattime1.text, satclass1, "with", satinstructor1.text)
+print(sattime2.text, satclass2, "with", satinstructor2.text)
+print(sattime3.text, satclass3, "with", satinstructor3.text)
+print(sattime4.text, satclass4, "with", satinstructor4.text)
+print(sattime5.text, satclass5, "with", satinstructor5.text)
+print(sattime6.text, satclass6, "with", satinstructor6.text)
+print(sattime7.text, satclass7, "with", satinstructor7.text)
+
+sunclass1 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[7]/table/tbody/tr[4]/td/ul/li[1]/div[1]').get_attribute('alt')
+sunclass2 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[7]/table/tbody/tr[4]/td/ul/li[2]/img').get_attribute('alt')
+sunclass3 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[7]/table/tbody/tr[4]/td/ul/li[3]/img').get_attribute('alt')
+sunclass4 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[7]/table/tbody/tr[4]/td/ul/li[4]/img').get_attribute('alt')
+sunclass5 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[7]/table/tbody/tr[4]/td/ul/li[5]/img').get_attribute('alt')
+sunclass6 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[7]/table/tbody/tr[4]/td/ul/li[6]/img').get_attribute('alt')
+
+suntime1 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[7]/table/tbody/tr[4]/td/ul/li[1]/div[1]')
+suntime2 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[7]/table/tbody/tr[4]/td/ul/li[2]/div[1]')
+suntime3 = driver.find_element(By.XPATH,
+     '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[7]/table/tbody/tr[4]/td/ul/li[3]/div[1]')
+suntime4 = driver.find_element(By.XPATH,
+     '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[7]/table/tbody/tr[4]/td/ul/li[4]/div[1]')
+suntime5 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[7]/table/tbody/tr[4]/td/ul/li[5]/div[1]')
+suntime6 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[7]/table/tbody/tr[4]/td/ul/li[6]/div[1]')
+
+
+suninstructor1 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[7]/table/tbody/tr[4]/td/ul/li[1]/div[2]/table/tbody/tr/td')
+suninstructor2 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[7]/table/tbody/tr[4]/td/ul/li[2]/div[2]/table/tbody/tr/td')
+suninstructor3 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[7]/table/tbody/tr[4]/td/ul/li[3]/div[2]/table/tbody/tr/td')
+suninstructor4 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[7]/table/tbody/tr[4]/td/ul/li[4]/div[2]/table/tbody/tr/td')
+suninstructor5 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[7]/table/tbody/tr[4]/td/ul/li[5]/div[2]/table/tbody/tr/td')
+suninstructor6 = driver.find_element(By.XPATH,
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[7]/table/tbody/tr[4]/td/ul/li[6]/div[2]/table/tbody/tr/td')
+
+print("\nSUNDAY CLASSES\n")
+print(suntime1.text, sunclass1, "with", suninstructor1.text)
+print(suntime2.text, sunclass2, "with", suninstructor2.text)
+print(suntime3.text, sunclass3, "with", suninstructor3.text)
+print(suntime4.text, sunclass4, "with", suninstructor4.text)
+print(suntime5.text, sunclass5, "with", suninstructor5.text)
+print(suntime6.text, sunclass6, "with", suninstructor6.text)
