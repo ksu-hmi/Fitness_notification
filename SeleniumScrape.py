@@ -6,6 +6,17 @@ from selenium.webdriver.common.by import By
 # in the code both of the imports (WebDriverWait & ExpectedCondition) needed.
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+#will need to import these libraries to send notification but should already be installed since it's part of python library
+import smtplib
+from email.message import EmailMessage
+
+import requests
+import os
+import os.path
+import csv
+import time
+
+
 
 #website used for scrape
 website = "https://www.onelifefitness.com/gyms/atlanta-holly-springs?hsLang=en"
@@ -40,7 +51,7 @@ sat = driver.find_element(By.XPATH,
 sun = driver.find_element(By.XPATH,
     '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[7]/table/tbody/tr[2]/td/table/tbody/tr[2]/td/table/tbody/tr[2]/td')
 
-#PRINT THE MOVIES 
+#PRINT THE MOVIES
 print("\nShowing Movies in the Cardio Cinema\n")
 print('Monday: ' + mon.text)
 print('Tuesday: ' + tue.text)
@@ -162,6 +173,21 @@ print(montime12.text, monclass12, "with", moninstructor12.text)
 print(montime13.text, monclass13, "with", moninstructor13.text)
 print(montime14.text, monclass14, "with", moninstructor14.text)
 
+mon_classes = str([montime1.text, monclass1, "with", moninstructor1.text,
+montime2.text, monclass2, "with", moninstructor2.text,
+montime3.text, monclass3, "with", moninstructor3.text,
+montime4.text, monclass4, "with", moninstructor4.text,
+montime5.text, monclass5, "with", moninstructor5.text,
+montime6.text, monclass6, "with", moninstructor6.text,
+montime7.text, monclass7, "with", moninstructor7.text,
+montime8.text, monclass8, "with", moninstructor8.text,
+montime9.text, monclass9, "with", moninstructor9.text,
+montime10.text, monclass10, "with", moninstructor10.text,
+montime11.text, monclass11, "with", moninstructor11.text,
+montime12.text, monclass12, "with", moninstructor12.text,
+montime13.text, monclass13, "with", moninstructor13.text,
+montime14.text, monclass14, "with", moninstructor14.text])
+
 #CODE TO FIND ALL TUESDAY CLASSES, TIMES AND INSTRUCTOR
 tueclass1 = driver.find_element(By.XPATH,
     '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[2]/table/tbody/tr[4]/td/ul/li[1]/div[1]').get_attribute('alt')
@@ -268,6 +294,7 @@ tueinstructor16 = driver.find_element(By.XPATH,
 tueinstructor17 = driver.find_element(By.XPATH,
     '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[2]/table/tbody/tr[4]/td/ul/li[17]/div[2]/table/tbody/tr/td')
 
+
 print("\nTUESDAY CLASSES\n")
 print(tuetime1.text, tueclass1, "with", tueinstructor1.text)
 print(tuetime2.text, tueclass2, "with", tueinstructor2.text)
@@ -286,6 +313,25 @@ print(tuetime14.text, tueclass14, "with", tueinstructor14.text)
 print(tuetime15.text, tueclass15, "with", tueinstructor15.text)
 print(tuetime16.text, tueclass16, "with", tueinstructor16.text)
 print(tuetime17.text, tueclass17, "with", tueinstructor17.text)
+
+
+tue_classes = str([tuetime1.text, tueclass1, "with", tueinstructor1.text,
+tuetime2.text, tueclass2, "with", tueinstructor2.text,
+tuetime3.text, tueclass3, "with", tueinstructor3.text,
+tuetime4.text, tueclass4, "with", tueinstructor4.text,
+tuetime5.text, tueclass5, "with", tueinstructor5.text,
+tuetime6.text, tueclass6, "with", tueinstructor6.text,
+tuetime7.text, tueclass7, "with", tueinstructor7.text,
+tuetime8.text, tueclass8, "with", tueinstructor8.text,
+tuetime9.text, tueclass9, "with", tueinstructor9.text,
+tuetime10.text, tueclass10, "with", tueinstructor10.text,
+tuetime11.text, tueclass11, "with", tueinstructor11.text,
+tuetime12.text, tueclass12, "with", tueinstructor12.text,
+tuetime13.text, tueclass13, "with", tueinstructor13.text,
+tuetime14.text, tueclass14, "with", tueinstructor14.text,
+tuetime15.text, tueclass15, "with", tueinstructor15.text,
+tuetime16.text, tueclass16, "with", tueinstructor16.text,
+tuetime17.text, tueclass17, "with", tueinstructor17.text])
 
 #CODE TO FIND ALL WEDNESDAY CLASSES, TIMES AND INSTRUCTOR
 wedclass1 = driver.find_element(By.XPATH,
@@ -316,8 +362,7 @@ wedclass13 = driver.find_element(By.XPATH,
     '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[3]/table/tbody/tr[4]/td/ul/li[13]/img').get_attribute('alt')
 wedclass14 = driver.find_element(By.XPATH,
     '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[3]/table/tbody/tr[4]/td/ul/li[14]/img').get_attribute('alt')
-wedclass15 = driver.find_element(By.XPATH,
-    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[3]/table/tbody/tr[4]/td/ul/li[15]/img').get_attribute('alt')
+
 
 
 wedtime1 = driver.find_element(By.XPATH,
@@ -348,8 +393,7 @@ wedtime13 = driver.find_element(By.XPATH,
     '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[3]/table/tbody/tr[4]/td/ul/li[13]/div[1]')
 wedtime14 = driver.find_element(By.XPATH,
     '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[3]/table/tbody/tr[4]/td/ul/li[14]/div[1]')
-wedtime15 = driver.find_element(By.XPATH,
-    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[3]/table/tbody/tr[4]/td/ul/li[15]/div[1]')
+
 
 
 wedinstructor1 = driver.find_element(By.XPATH,
@@ -380,8 +424,7 @@ wedinstructor13 = driver.find_element(By.XPATH,
     '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[3]/table/tbody/tr[4]/td/ul/li[13]/div[2]/table/tbody/tr/td')
 wedinstructor14 = driver.find_element(By.XPATH,
     '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[3]/table/tbody/tr[4]/td/ul/li[14]/div[2]/table/tbody/tr/td')
-wedinstructor15 = driver.find_element(By.XPATH,
-    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[3]/table/tbody/tr[4]/td/ul/li[15]/div[2]/table/tbody/tr/td')
+
  
 
 print("\nWEDNESDAY CLASSES\n")
@@ -399,7 +442,21 @@ print(wedtime11.text, wedclass11, "with", wedinstructor11.text)
 print(wedtime12.text, wedclass12, "with", wedinstructor12.text)
 print(wedtime13.text, wedclass13, "with", wedinstructor13.text)
 print(wedtime14.text, wedclass14, "with", wedinstructor14.text)
-print(wedtime15.text, wedclass15, "with", wedinstructor15.text)
+
+wed_classes = str([wedtime1.text, wedclass1, "with", wedinstructor1.text,
+wedtime2.text, wedclass2, "with", wedinstructor2.text,
+wedtime3.text, wedclass3, "with", wedinstructor3.text,
+wedtime4.text, wedclass4, "with", wedinstructor4.text,
+wedtime5.text, wedclass5, "with", wedinstructor5.text,
+wedtime6.text, wedclass6, "with", wedinstructor6.text,
+wedtime7.text, wedclass7, "with", wedinstructor7.text,
+wedtime8.text, wedclass8, "with", wedinstructor8.text,
+wedtime9.text, wedclass9, "with", wedinstructor9.text,
+wedtime10.text, wedclass10, "with", wedinstructor10.text,
+wedtime11.text, wedclass11, "with", wedinstructor11.text,
+wedtime12.text, wedclass12, "with", wedinstructor12.text,
+wedtime13.text, wedclass13, "with", wedinstructor13.text,
+wedtime14.text, wedclass14, "with", wedinstructor14.text])
 
 
 #CODE TO FIND ALL THURSDAY CLASSES, TIMES AND INSTRUCTOR
@@ -523,6 +580,15 @@ print(thutime14.text, thuclass14, "with", thuinstructor14.text)
 print(thutime15.text, thuclass15, "with", thuinstructor15.text)
 print(thutime16.text, thuclass16, "with", thuinstructor16.text)
 
+thurs_classes = str([thutime1.text, thuclass1, "with", thuinstructor1.text, thutime2.text, thuclass2, "with", thuinstructor2.text, 
+thutime3.text, thuclass3, "with", thuinstructor3.text,thutime4.text, thuclass4, "with", thuinstructor4.text, thutime5.text, thuclass5, "with", thuinstructor5.text,
+thutime6.text, thuclass6, "with", thuinstructor6.text,
+thutime7.text, thuclass7, "with", thuinstructor7.text,thutime8.text, thuclass8, "with", thuinstructor8.text,
+thutime9.text, thuclass9, "with", thuinstructor9.text,thutime10.text, thuclass10, "with", thuinstructor10.text,
+thutime11.text, thuclass11, "with", thuinstructor11.text,thutime12.text, thuclass12, "with", thuinstructor12.text,
+thutime13.text, thuclass13, "with", thuinstructor13.text,thutime14.text, thuclass14, "with", thuinstructor14.text,
+thutime15.text, thuclass15, "with", thuinstructor15.text, thutime16.text, thuclass16, "with", thuinstructor16.text])
+
 #CODE TO FIND ALL FRIDAY CLASSES, TIMES AND INSTRUCTOR
 friclass1 = driver.find_element(By.XPATH,
     '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[5]/table/tbody/tr[4]/td/ul/li[1]/img').get_attribute('alt')
@@ -608,6 +674,12 @@ print(fritime9.text, friclass9, "with", friinstructor9.text)
 print(fritime10.text, friclass10, "with", friinstructor10.text)
 print(fritime11.text, friclass11, "with", friinstructor11.text)
 
+#formation of list
+friday_classes = str([fritime1.text, friclass1, "with", friinstructor1.text, fritime2.text, friclass2, "with", friinstructor2.text, 
+fritime3.text, friclass3, "with", friinstructor3.text, fritime4.text, friclass4, "with", friinstructor4.text, fritime5.text, friclass5, "with", friinstructor5.text,
+fritime6.text, friclass6, "with", friinstructor6.text, fritime7.text, friclass7, "with", friinstructor7.text, fritime8.text, friclass8, "with", friinstructor8.text,
+fritime9.text, friclass9, "with", friinstructor9.text, fritime10.text, friclass10, "with", friinstructor10.text,fritime11.text, friclass11, "with", friinstructor11.text])
+
 satclass1 = driver.find_element(By.XPATH,
     '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[6]/table/tbody/tr[4]/td/ul/li[1]/div[1]').get_attribute('alt')
 satclass2 = driver.find_element(By.XPATH,
@@ -665,10 +737,15 @@ print(sattime5.text, satclass5, "with", satinstructor5.text)
 print(sattime6.text, satclass6, "with", satinstructor6.text)
 print(sattime7.text, satclass7, "with", satinstructor7.text)
 
+saturday_classes = str([sattime1.text, satclass1, "with", satinstructor1.text, sattime2.text, satclass2, "with", satinstructor2.text, 
+sattime3.text, satclass3, "with", satinstructor3.text,sattime4.text, satclass4, "with", satinstructor4.text, sattime5.text, satclass5, "with", satinstructor5.text,
+sattime6.text, satclass6, "with", satinstructor6.text, sattime7.text, satclass7, "with", satinstructor7.text])
+
+
 sunclass1 = driver.find_element(By.XPATH,
-    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[7]/table/tbody/tr[4]/td/ul/li[1]/div[1]').get_attribute('alt')
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[7]/table/tbody/tr[4]/td/ul/li[1]/img').get_attribute('alt')
 sunclass2 = driver.find_element(By.XPATH,
-    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[7]/table/tbody/tr[4]/td/ul/li[2]/img').get_attribute('alt')
+    '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[7]/table/tbody/tr[4]/td/ul/li[2]/img').get_attribute('alt') 
 sunclass3 = driver.find_element(By.XPATH,
     '//*[@id="divContent"]/table[2]/tbody/tr[1]/td[7]/table/tbody/tr[4]/td/ul/li[3]/img').get_attribute('alt')
 sunclass4 = driver.find_element(By.XPATH,
@@ -712,3 +789,39 @@ print(suntime3.text, sunclass3, "with", suninstructor3.text)
 print(suntime4.text, sunclass4, "with", suninstructor4.text)
 print(suntime5.text, sunclass5, "with", suninstructor5.text)
 print(suntime6.text, sunclass6, "with", suninstructor6.text)
+
+sunday_classes = str([suntime1.text, sunclass1, "with", suninstructor1.text, suntime2.text, sunclass2, "with", suninstructor2.text,suntime3.text, sunclass3, "with", suninstructor3.text,
+suntime4.text, sunclass4, "with", suninstructor4.text, suntime5.text, sunclass5, "with", suninstructor5.text, suntime6.text, sunclass6, "with", suninstructor6.text])
+
+print(sunday_classes)
+
+#creating an email alert def function 
+def email_alert(subject, body, to): 
+    #creating the message from the library above
+    msg = EmailMessage()
+    #method on the message and set it so the body of the message passes through this function
+    msg.set_content(body)
+    #set the subject of the email 
+    msg['subject'] = subject
+    #set the to of the emation
+    msg['to'] = to 
+   
+
+    #created a new gmail for the presentation - where the notification
+    user = "melekwon.py@gmail.com" 
+    msg['from'] = user
+    password = "zkovulyeuiteehno"
+
+    #Where you use the SMTP library from above and set it to gmail's smtp server with port 587
+    server = smtplib.SMTP("smtp.gmail.com",587)
+    #now can work with the server
+    server.starttls()
+    server.login(user, password)
+    server.send_message(msg)
+    server.quit()
+
+
+if __name__ == '__main__':
+    email_alert("Today's Schedule", sunday_classes, "6785258726@tmomail.net")
+
+    
