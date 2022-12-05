@@ -18,6 +18,7 @@ def email_alert(subject, body, to):
     user = "melekwon.py@gmail.com" 
     msg['from'] = user
     password = "zkovulyeuiteehno"
+    print("login success")
 
     #Where you use the SMTP library from above and set it to gmail's smtp server with port 587
     server = smtplib.SMTP("smtp.gmail.com",587)
@@ -30,9 +31,8 @@ def email_alert(subject, body, to):
 
 if __name__ == '__main__':
     email_alert("Today's Schedule", "Hello world", "6785258726@tmomail.net")
+    print("text has been sent")
 
     
-
-
 
 
