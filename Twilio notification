@@ -1,0 +1,41 @@
+!pip install twilio
+from twilio.rest import Client
+account_sid = "Your acc ID"
+auth_token = 'Your Token'
+client = Client(account_sid, auth_token)
+message = client.messages .create(
+                    body =  "Testing 1, 2, 3", #Message you send
+                    from_ = "+1**********+,#Provided phone number
+                    to =    "+1**********")#Your phone number
+message.sid
+
+from twilio.rest import Client
+  account sid = "Your acc ID"
+  auth token = 'Your Token'
+  client = Client (account sid, auth_ token)
+  class LossAndErrorPrintingCallback(keras.callbacks.Callback):
+    def on _epoch _end (self, epoch, logs=None):
+      message = client.messages .create(
+        body ="The average loss for epoch () is :7.2f}
+              "and mean absolute error is {:7.2f}.". format (
+              epoch, logs["loss"], logs["mean absolute error"]),
+        from
+            "+1**********". to
+            "+1**********"
+      print(message. sid)
+
+
+#This might be a direct code to the twilio account
+from twilio.rest import Client 
+ 
+account_sid = 'ACd5808dd8d2927ac7e47284fe76d1449b' 
+auth_token = '[AuthToken]' 
+client = Client(account_sid, auth_token) 
+ 
+message = client.messages.create(  
+                              messaging_service_sid='MG3ed9c41e5579a580ad47221c103d6f93', 
+                              body='Your class is today',      
+                              to='+12294490242' 
+                          ) 
+ 
+print(message.sid)
