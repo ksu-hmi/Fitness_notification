@@ -12,8 +12,8 @@
 ## Sprint 2 
 - [x] Each Team Member will commit a minimum of 6 substantial changes to the code for the project. 
 - [x] Mele will find a code to scrape the OneLife Website 
-- [ ] Tyler will find a code that will send notification to the phone 
-- [ ] Riley will find additional code that may help
+- [x] Tyler will find a code that will send notification to the phone 
+- [x] Riley will find additional code that may help
 - [x] Each commit will be accompanied by a comment in the code explaining what was done and why. 
 - [x] Each comment must explain what the update was and why it was updated. 
 - [x] All updates will be posted in Github so the changes can be seen by all. 
@@ -21,6 +21,6 @@
 - [x] Create code for notification to be sent to phone.
 
 ## Sprint 3 
-- [ ] Refine and edit existing code. 
-- [ ] Create a Powerpoint Slide introducing your topic. 
+- [x] Refine and edit existing code. 
+- [x] Create a Powerpoint Slide introducing your topic. 
 - [ ] All Team Members will upload a copy of the Powerpoint to D2L.
